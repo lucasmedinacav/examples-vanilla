@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<title>Teste data</title>
+</head>
+
+<body>
+	<h1 data-teste="1">1</h1>
+	<h1 data-teste="2">2</h1>
+	<h1 data-teste="3">3</h1>
+	<h1 data-teste="4">4</h1>
+	<h1 data-teste="5">5</h1>
+	<script>
+		let itens = document.querySelectorAll('h1');
+		itens.forEach((item) => {
+			if (item.dataset.teste < 3) {
+				item.style.display = "none";
+			}
+		});
+	</script>
+</body>
+
+</html>
